@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap);
 @charset "UTF-8";
+@font-face {
+  font-family: icons;
+  font-display: swap;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 [class*=_icon-]:before {
   font-family: "icons";
   font-style: normal;
@@ -15,41 +22,20 @@
   display: block;
 }
 
-._icon-alphabet:before {
-  content: "\e900";
-}
-
-._icon-amazon:before {
-  content: "\e901";
-}
-
-._icon-arrow:before {
-  content: "\e902";
-  font-weight: 800;
-}
-
-._icon-at-sign:before {
-  content: "\e903";
-}
-
-._icon-codepen:before {
+._icon-github:before {
   content: "\e904";
 }
 
-._icon-D:before {
+._icon-be:before {
   content: "\e905";
 }
 
-._icon-dribble:before {
+._icon-in:before {
   content: "\e906";
 }
 
-._icon-facebook:before {
+._icon-codepan:before {
   content: "\e907";
-}
-
-._icon-googlel:before {
-  content: "\e908";
 }
 
 * {
@@ -375,14 +361,14 @@ body::after {
   width: 3.625rem;
   height: 3.625rem;
 }
-@supports (margin-right: clamp( 0rem , -0.5605381166rem  +  2.802690583vw , 1.5625rem )) {
+@supports (margin-right: clamp( 0.9375rem , 0.7132847534rem  +  1.1210762332vw , 1.5625rem )) {
   .header__logo {
-    margin-right: clamp( 0rem , -0.5605381166rem  +  2.802690583vw , 1.5625rem );
+    margin-right: clamp( 0.9375rem , 0.7132847534rem  +  1.1210762332vw , 1.5625rem );
   }
 }
-@supports not (margin-right: clamp( 0rem , -0.5605381166rem  +  2.802690583vw , 1.5625rem )) {
+@supports not (margin-right: clamp( 0.9375rem , 0.7132847534rem  +  1.1210762332vw , 1.5625rem )) {
   .header__logo {
-    margin-right: calc(0rem + 1.5625 * (100vw - 20rem) / 55.75);
+    margin-right: calc(0.9375rem + 0.625 * (100vw - 20rem) / 55.75);
   }
 }
 .header__name {
@@ -623,7 +609,7 @@ body::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.125rem;
+  gap: 2.5rem;
 }
 @supports (gap: clamp( 1.5625rem , 1.360706278rem  +  1.0089686099vw , 2.125rem )) {
   .footer__social {
@@ -634,6 +620,23 @@ body::after {
   .footer__social {
     gap: calc(1.5625rem + 0.5625 * (100vw - 20rem) / 55.75);
   }
+}
+.footer__link {
+  font-size: 1.5rem;
+  color: #B2B2B2;
+  transition: background-color 0.3s ease 0s;
+}
+.footer__link:hover {
+  color: #5528FF;
+}
+.footer__link_1 {
+  font-size: 1.75rem;
+}
+.footer__link_2 {
+  font-size: 1.375rem;
+}
+.footer__link_4 {
+  font-size: 1.875rem;
 }
 .footer__image:hover {
   display: flex;
